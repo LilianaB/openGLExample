@@ -34,14 +34,6 @@ class MyGLSurfaceView extends GLSurfaceView {
         // and other input controls. In this case, you are only
         // interested in events where the touch position changed.
 
-        try {
-            //sleep a bit before checking current event
-            //avoid entering too many times to the switch
-            Thread.sleep(50);
-        } catch (InterruptedException ee) {
-            ee.printStackTrace();
-        }
-
         float x = e.getX();
         float y = e.getY();
 
